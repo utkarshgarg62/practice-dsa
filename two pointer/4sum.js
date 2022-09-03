@@ -9,7 +9,7 @@ var fourSum = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
             for (let k = j + 1; k < nums.length; k++) {
-                for (let l = k + 1; l < nums.length; l++) { 
+                for (let l = k + 1; l < nums.length; l++) {
                     if ((nums[i] + nums[j] + nums[k]) + nums[l] == target) {
                         newNums.push([nums[i], nums[j], nums[k], nums[l]])
                         while (nums[l] === nums[l - 1]) l--
@@ -26,6 +26,7 @@ var fourSum = function (nums, target) {
 
 let result = fourSum([1, 0, -1, 0, -2, 2], 0)
 console.log(result)
+// Time Complexity : O(n^4)
 
 
 // Two Pointer Approach:
@@ -56,3 +57,4 @@ var fourSum = function (nums, target) {
 
 let result2 = fourSum([1, 0, -1, 0, -2, 2], 0)
 console.log(result2)
+// Time Complexity : O(n^3)

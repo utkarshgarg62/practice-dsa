@@ -11,7 +11,7 @@ function dis_count(arr){
         }
     }
 
-    console.log(min_el)
+    // console.log(min_el)
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == min_el) {
             index_arr.push(i)
@@ -19,7 +19,7 @@ function dis_count(arr){
     }
 
     index_arr.sort(function (a, b) { return a - b })
-    console.log(index_arr)
+    // console.log(index_arr)
 
     let min_dis=Number.MAX_VALUE
     
