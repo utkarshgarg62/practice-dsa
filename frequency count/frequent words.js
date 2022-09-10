@@ -14,11 +14,11 @@ function abc(words,k){
             obj[words[i]]=1
         }
     }
-    console.log(obj)
+    // console.log(obj)
     const sortable = Object.entries(obj)
     .sort(([,a],[,b]) => b-a)
 
-    console.log(sortable);
+    // console.log(sortable);
     let arr=[]
     for(let i=0;i<k;i++){
         arr.push(sortable[i][0])
@@ -28,7 +28,7 @@ function abc(words,k){
 }
 
 
-let res = abc(["i","love","leetcode","i","love","coding"], 3)
+let res = abc(["i","love","leetcode","i","love","coding"], 2)
 console.log(res)
 
 

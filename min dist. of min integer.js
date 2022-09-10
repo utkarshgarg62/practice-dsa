@@ -34,10 +34,3 @@ function dis_count(arr){
 }
 
 console.log(dis_count([5, 1, 2, 3, 4, 1, 2, 1]))
-
-
-
-
-
-
-
