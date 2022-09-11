@@ -10,24 +10,24 @@
 // https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/ => Leetcode(medium)
 
 
-function abc(s){
+function abc(s) {
     const map = new Map()
     let i = 0
     let j = 0
     let count = 0
-    
-    while(j < s.length) {
+
+    while (j < s.length) {
         let ele = s[j]
-        if(map.has(ele)) {
-            map.set(ele, map.get(ele)+1)
+        if (map.has(ele)) {
+            map.set(ele, map.get(ele) + 1)
         } else {
             map.set(ele, 1)
         }
-    
-        while(map.size === 3) {
+
+        while (map.size === 3) {
             count += s.length - j
             const i_count = map.get(s[i])
-            if(i_count > 1) {
+            if (i_count > 1) {
                 map.set(s[i], i_count - 1)
             } else {
                 map.delete(s[i])

@@ -1,7 +1,7 @@
 // Given an array of integers, find the minimum distance between any two occurrences of the minimum integer in the array.
 // let arr = [5, 1, 2, 3, 4, 1, 2, 1]
 
-function dis_count(arr){
+function dis_count(arr) {
     let index_arr = []
     let min_el = arr[0]
     for (let i = 0; i < arr.length; i++) {
@@ -21,11 +21,11 @@ function dis_count(arr){
     index_arr.sort(function (a, b) { return a - b })
     // console.log(index_arr)
 
-    let min_dis=Number.MAX_VALUE
-    
-    for (let i=0;i<index_arr.length;i++){
-        if(index_arr[i]-index_arr[i-1]<min_dis){
-            min_dis=index_arr[i]-index_arr[i-1]
+    let min_dis = Number.MAX_VALUE
+
+    for (let i = 0; i < index_arr.length; i++) {
+        if (index_arr[i] - index_arr[i - 1] < min_dis) {
+            min_dis = index_arr[i] - index_arr[i - 1]
         }
     }
     return min_dis

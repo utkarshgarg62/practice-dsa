@@ -4,7 +4,7 @@
 // Output: [1,2]
 
 // Approach 1: Using Hash Map 
-function top_K_element(nums,k){
+function top_K_element(nums, k) {
     let mp = new Map()
 
     for (let ele of nums) {
@@ -16,19 +16,19 @@ function top_K_element(nums,k){
         }
     }
     let array = [];
-    for(let [key, value] of mp) {
+    for (let [key, value] of mp) {
         array.push([key, value]);
     }
-    array.sort(function(a,b) {
+    array.sort(function (a, b) {
         return b[1] - a[1];
     })
     let result = [];
-    for(let i = 0; i < k; i++) {
+    for (let i = 0; i < k; i++) {
         result.push(array[i][0]);
     }
     return result;
 
 }
 
-let res= top_K_element([1,1,1,2,2,3],2)
+let res = top_K_element([1, 1, 1, 2, 2, 3], 2)
 console.log(res)

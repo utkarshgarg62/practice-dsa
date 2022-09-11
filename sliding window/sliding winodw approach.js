@@ -58,14 +58,14 @@ console.log(result)
 // https://leetcode.com/problems/sliding-window-maximum/  => leetcode [difficult]
 
 // sliding window approach:
-function sliding(nums, k){
+function sliding(nums, k) {
     let j = 0;
     let i = 0;
     let larg_num = [];
     let res = [];
     while (j < nums.length) {
 
-        while (larg_num.length > 0 && larg_num[larg_num.length - 1] < nums[j]){
+        while (larg_num.length > 0 && larg_num[larg_num.length - 1] < nums[j]) {
             larg_num.pop()
         }
         larg_num.push(nums[j])
@@ -76,7 +76,7 @@ function sliding(nums, k){
         else if (j - i + 1 == k) {
             res.push(larg_num[0])
             if (larg_num[0] == nums[i])
-            larg_num.shift()
+                larg_num.shift()
             j++
             i++
         }

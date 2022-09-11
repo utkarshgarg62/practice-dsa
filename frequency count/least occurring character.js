@@ -15,19 +15,19 @@ function leastOccuringCharacter(st) {
         obj[st[i]] = (obj[st[i]] || 0) + 1
     }
     // console.log(obj)
-    let smlst_code= Infinity
-    let smlst_ele=0
+    let smlst_code = Infinity
+    let smlst_ele = 0
     for (let ele in obj) {
 
         if (obj[ele] == 1) {
-            if (ele.charCodeAt(ele)<smlst_code){
-                smlst_code= ele.charCodeAt(ele)
-                smlst_ele=ele
+            if (ele.charCodeAt(ele) < smlst_code) {
+                smlst_code = ele.charCodeAt(ele)
+                smlst_ele = ele
             }
-        // console.log(ele + " " + obj[ele] + " " + ele.charCodeAt(ele))
+            // console.log(ele + " " + obj[ele] + " " + ele.charCodeAt(ele))
         }
     }
-return smlst_ele
+    return smlst_ele
 }
 
 let res = leastOccuringCharacter("hello")

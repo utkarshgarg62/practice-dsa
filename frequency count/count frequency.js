@@ -112,7 +112,7 @@ count_freq4([1, 2, 3, 3, 4, 4, 7, 7, 8, 1, 3])
 
 // function freq(str){
 //     let arr=str.split(" ").join("")
-    
+
 //     let obj={}
 //     for(let ele of arr){
 //        if(obj[ele]){
@@ -128,12 +128,12 @@ count_freq4([1, 2, 3, 3, 4, 4, 7, 7, 8, 1, 3])
 // console.log(freq("hello world"))
 
 
-function freq(str){
-    let arr=str.split(" ").join("")
-    
-    let obj={}
-    for(let ele of arr){
-        obj[ele]=(obj[ele] || 0 )+1
+function freq(str) {
+    let arr = str.split(" ").join("")
+
+    let obj = {}
+    for (let ele of arr) {
+        obj[ele] = (obj[ele] || 0) + 1
     }
     return obj
 }

@@ -2,10 +2,10 @@
 // Input: N = 123
 // Output: 321
 
-function reverse(N){
-    let arr=N.toString().split("")
-    let newArr=[]
-    for(let i=arr.length-1;i>=0;i--){
+function reverse(N) {
+    let arr = N.toString().split("")
+    let newArr = []
+    for (let i = arr.length - 1; i >= 0; i--) {
         newArr.push(arr[i])
     }
     return newArr.join("")

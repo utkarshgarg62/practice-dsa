@@ -3,24 +3,24 @@
 // Explanation: "i" and "love" are the two most frequent words.
 // Note that "i" comes before "love" due to a lower alphabetical order.
 
-function abc(words,k){
+function abc(words, k) {
     // console.log(words)
-    let obj ={}
-    for(let i=0;i<words.length;i++){
-        if(obj[words[i]]){
-            obj[words[i]]+=1
+    let obj = {}
+    for (let i = 0; i < words.length; i++) {
+        if (obj[words[i]]) {
+            obj[words[i]] += 1
         }
-        else{
-            obj[words[i]]=1
+        else {
+            obj[words[i]] = 1
         }
     }
     // console.log(obj)
     const sortable = Object.entries(obj)
-    .sort(([,a],[,b]) => b-a)
+        .sort(([, a], [, b]) => b - a)
 
     // console.log(sortable);
-    let arr=[]
-    for(let i=0;i<k;i++){
+    let arr = []
+    for (let i = 0; i < k; i++) {
         arr.push(sortable[i][0])
     }
     return arr
@@ -28,7 +28,7 @@ function abc(words,k){
 }
 
 
-let res = abc(["i","love","leetcode","i","love","coding"], 2)
+let res = abc(["i", "love", "leetcode", "i", "love", "coding"], 2)
 console.log(res)
 
 

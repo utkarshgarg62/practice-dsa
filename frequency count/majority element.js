@@ -16,19 +16,19 @@
 // Here for the given array, 2 appears 3 times in the array of size 5. 
 
 
-function abc(arr,n){
-    let obj={}
-    for(let ele of arr){
+function abc(arr, n) {
+    let obj = {}
+    for (let ele of arr) {
         obj[ele] = (obj[ele] || 0) + 1
     }
     console.log(obj)
 
-    for(let ele in obj){
-        
+    for (let ele in obj) {
+
     }
 
 }
 
 
-let res = abc([1,2,1,2,2],5)
+let res = abc([1, 2, 1, 2, 2], 5)
 console.log(res)

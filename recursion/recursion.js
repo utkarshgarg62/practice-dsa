@@ -1,6 +1,6 @@
 function abc(N) {
-    N=N.toString()
-    return N.length !== 1 ? abc(N.slice(1))+N[0] : N;
+    N = N.toString()
+    return N.length !== 1 ? abc(N.slice(1)) + N[0] : N;
 
 }
 

@@ -2,8 +2,8 @@
 // Input: N = 12345
 // Output: 5
 
-function count(N){
-    let result=N.toString()
+function count(N) {
+    let result = N.toString()
     return result.length
 }
 

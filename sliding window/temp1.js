@@ -17,8 +17,8 @@ function abc(num, k) {
                 count++
             }
         }
-            if (j - i + 1 < k) j++
-            else i++
+        if (j - i + 1 < k) j++
+        else i++
     }
     return count
 }

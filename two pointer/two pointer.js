@@ -123,7 +123,7 @@ console.log(res4)
 
 // Two Pointer Approach:
 function ThreeSum2(arr, x) {
-    arr.sort(function(a,b){return a-b})
+    arr.sort(function (a, b) { return a - b })
     for (let i = 0; i < arr.length - 2; i++) {
         let j = i + 1
         let k = arr.length - 1

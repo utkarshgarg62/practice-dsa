@@ -15,7 +15,7 @@ function abc(arr) {
     let sum = firstLarge_ele + secondLarge_ele
     console.log("Max Sum is : " + sum);
 
-    return "First Large Element is : " + firstLarge_ele + 
+    return "First Large Element is : " + firstLarge_ele +
         " , " + "First Large Element is : " + secondLarge_ele
 }
 
