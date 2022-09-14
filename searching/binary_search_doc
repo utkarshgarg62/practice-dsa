@@ -1,0 +1,12 @@
+## BINARY SEARCH TIME COMPLEXITY : O ( log n)
+
+=> TIME COMPLEXITY are of 3 Types:
+    - best case scenario  => O(1)
+    - worst case scenario => O(logn)
+    - avg case scenario => O(logn)
+
+* Binary Search work on only sorted array. 
+    * or sort the array then use binary search.
+        [For unsorted array best option is linear search]
+
+* For very very large arr or document, binary search would be bad choice.
