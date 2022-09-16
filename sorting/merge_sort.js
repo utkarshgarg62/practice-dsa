@@ -56,27 +56,27 @@
 // let res = merge_sort([233, 12, 6, 3, 89, 34, 56], 0, 7)
 // console.log(res)
 
-var sortArray = function(nums) {
-    let len = nums.length;
-    if(len < 2) return nums;
-    const mid = Math.floor(len / 2);
-    const left = sortArray(nums.slice(0, mid));
-    const right = sortArray(nums.slice(mid, len));
-    return merge(left, right);
+// var sortArray = function(nums) {
+//     let len = nums.length;
+//     if(len < 2) return nums;
+//     const mid = Math.floor(len / 2);
+//     const left = sortArray(nums.slice(0, mid));
+//     const right = sortArray(nums.slice(mid, len));
+//     return merge(left, right);
     
-};
+// };
 
-function merge(left, right) {
-    let res = [];
-    while(left.length && right.length) {
-        res.push( (left[0] < right[0]) ? left.shift() : right.shift() );
-    }
-    return res.concat(left, right);
-}
+// function merge(left, right) {
+//     let res = [];
+//     while(left.length && right.length) {
+//         res.push( (left[0] < right[0]) ? left.shift() : right.shift() );
+//     }
+//     return res.concat(left, right);
+// }
 
 
-let res = sortArray([233, 12, 6, 3, 89, 34, 56])
-console.log(res)
+// let res = sortArray([233, 12, 6, 3, 89, 34, 56])
+// console.log(res)
 
 
 var sortArray3 = function(nums) {

@@ -1,20 +1,21 @@
-// nums = [233, 12, 6, 89, 34, 56]
+// arr = [233, 12, 6, 89, 34, 56]
 // output: [6, 12, 34, 56, 89, 233]
 
-function bubble_sort(nums) {
-    for (let i = 0; i < nums.length; i++) {
+function bubble_sort(arr) {
+    for (let i = 0; i < arr.length; i++) {
         let swap = false
-        for (let j = 0; j < nums.length - 1; j++) {
-            if (nums[j] > nums[j + 1]) {
-                nums[j] = nums[j] + nums[j + 1]
-                nums[j + 1] = nums[j] - nums[j + 1]
-                nums[j] = nums[j] - nums[j + 1]
+        for (let j = 0; j < arr.length - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+
+                arr[j] = arr[j] + arr[j + 1]
+                arr[j + 1] = arr[j] - arr[j + 1]
+                arr[j] = arr[j] - arr[j + 1]
                 swap = true
             }
         }
         if (swap == false) break;
     }
-    return nums
+    return arr
 }
 
 
