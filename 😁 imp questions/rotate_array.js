@@ -37,8 +37,8 @@ function abc(arr, k) {
     // console.log(temp)
 
     for (let i = 0; i < arr.length; i++) {
-        let shiftIndex = (i + k) % arr.length;
-        temp[shiftIndex] = arr[i];
+        let idx = (i + k) % arr.length;
+        temp[idx] = arr[i];
     }
 
     for (let i = 0; i < arr.length; i++) {
@@ -50,16 +50,7 @@ function abc(arr, k) {
 
 
 let res2 = abc([12, 3, 6, 2, 9, 11], 2)
-// console.log(res2)
-
-
-
-
-
-
-
-
-
+console.log(res2)
 
 
 
