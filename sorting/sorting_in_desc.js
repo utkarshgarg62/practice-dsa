@@ -7,7 +7,7 @@ function sort(arr) {
         let x = 0;
 
         while (idx1 <= mid && idx2 <= end) {
-            if (arr[idx1] <= arr[idx2]) {
+            if (arr[idx1] >= arr[idx2]) {
                 merged[x] = arr[idx1]
                 x++
                 idx1++

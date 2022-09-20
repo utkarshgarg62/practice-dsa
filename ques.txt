@@ -1,0 +1,28 @@
+-Merge sort
+-Quick Sort
+-Merge two sorted arrays
+-Find target index after array is sorted
+-Rotate array by k
+-Max subarray of size k
+-Maximum sum in subarray of size k
+-First negative element in given window
+-Anagram count
+-Longest subarray having sum = k
+-Longest substring of K distinct character
+-Largest substring with No repeating character
+-Smallest substring containing all characters of -another string
+-Squares of sorted array
+-Check if palindrome
+-Decimal to binary
+-Reverse Array in group of K
+-Print all subsets of a given set
+-Print all permutation of string
+
+
+
+
+-Find a loop in linked list
+-Find intersection point of two LL
+-Reverse a LL
+-Merge two sorted LL
+-Reverse LL in group of K

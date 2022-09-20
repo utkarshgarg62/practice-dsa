@@ -21,7 +21,7 @@ function abc(arr) {
             merged[c++] = arr[j++]
         }
 
-        for (let k = 0, p = start; k < merged.length; k++, p++) {
+        for (let k = 0, p = start; k < merged.length; p++, k++) {
             arr[p] = merged[k]
         }
     }
@@ -42,36 +42,36 @@ function abc(arr) {
 
 
 let res = abc([9, 7, 1, 8, 2, 5])
-// console.log(res)
+console.log(res)
 
 
 
 function merge(arr1, m, arr2, n) {
 
-    let merged=Array(m+n)
-    let i=0
-    let j=0
-    let c=0
+    let merged = Array(m + n)
+    let i = 0
+    let j = 0
+    let c = 0
 
-    while(i<m && j<n){
-        if(arr1[i] <= arr2[j]){
-            merged[c++]= arr1[i++]
-        }else{
-            merged[c++]= arr2[j++]
+    while (i < m && j < n) {
+        if (arr1[i] <= arr2[j]) {
+            merged[c++] = arr1[i++]
+        } else {
+            merged[c++] = arr2[j++]
         }
     }
-    while(i<m){
-        merged[c++]= arr1[i++]
+    while (i < m) {
+        merged[c++] = arr1[i++]
     }
 
-    while(j<n){
-        merged[c++]= arr2[j++]
+    while (j < n) {
+        merged[c++] = arr2[j++]
     }
 
-    for(let i=0;i<merged.length;i++){
+    for (let i = 0; i < merged.length; i++) {
         arr1[i] = merged[i]
     }
-return arr1
+    return arr1
 }
 
 

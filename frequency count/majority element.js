@@ -21,10 +21,12 @@ function abc(arr, n) {
     for (let ele of arr) {
         obj[ele] = (obj[ele] || 0) + 1
     }
-    console.log(obj)
+    // console.log(obj)
 
     for (let ele in obj) {
-
+        if(obj[ele] > n/2){
+            return ele
+        }
     }
 
 }
