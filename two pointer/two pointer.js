@@ -31,12 +31,8 @@ function sumIsEqualTo1(arr, sum) {
         if (arr[i] + arr[j] == sum) {
             return [arr[i], arr[j]]
         }
-        else if (arr[i] + arr[j] < sum) {
-            i++
-        }
-        else if (arr[i] + arr[j] > sum) {
-            j--
-        }
+        if (arr[i] + arr[j] < sum) i++
+        else j--
     }
     return "No Pair Found"
 

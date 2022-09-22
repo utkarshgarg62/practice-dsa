@@ -7,15 +7,11 @@ function sort1(arr) {
         for (let j = low; j < high; j++) {
             if (arr[j] < pivot) {
                 i++
-                let temp = arr[i]
-                arr[i] = arr[j]
-                arr[j] = temp
+                [arr[i], arr[j]] = [arr[j], arr[i]]
             }
         }
         i++
-        let temp = arr[i]
-        arr[i] = pivot
-        arr[high] = temp
+        [arr[i], arr[high]] = [pivot, arr[i]]
         return i;
     }
 

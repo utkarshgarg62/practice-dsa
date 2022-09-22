@@ -28,12 +28,8 @@ function distinctPair2(arr) {
         if (arr[i] + arr[j] == 0) {
             return [arr[i], arr[j]]
         }
-        else if (arr[i] + arr[j] < 0) {
-            i = i + 1
-        }
-        else if (arr[i] + arr[j] > 0) {
-            j = j - 1
-        }
+        if (arr[i] + arr[j] < 0) i++
+        else j--
     }
     return false
 
