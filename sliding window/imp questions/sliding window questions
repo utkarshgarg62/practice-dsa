@@ -1,0 +1,13 @@
+#Fixed Size -
+- Maximum / Minimum sum sub array of size k
+- Fist -ve Integer in every window of size k
+- Count Occurances of anagram
+- Maximum of all subarray of size k
+- Maximum of minimum for every min size
+
+#Variable Size -
+- Largest / Smallest subarray of sum k
+- Largest sub-string of k distinct character
+- Length of largest subsarray and no repeating charcters
+- Pick Toy
+- Minimum Window Substring
