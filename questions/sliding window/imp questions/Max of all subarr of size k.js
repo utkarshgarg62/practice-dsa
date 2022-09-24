@@ -1,3 +1,5 @@
+var Dequeue = require('dequeue')
+
 // Maximum of all sub-array of size k
 arr = [1, 3, -1, -3, 5, 3, 6, 7]
 n = 8
@@ -8,23 +10,23 @@ var maxNum = (arr, n, k) => {
 
     let i = 0
     let j = 0
-    let dq = new Deque
+    let dq = new Dequeue()
     let ans = []
     while (j < n) {
         // j - ki calculation
-        while(dq.back() < arr[j] && dq.size() >0) dq.popBack()
-        dq.pushBack(arr[j])
+        while (dq.last() < arr[j] && dq.length > 0) dq.pop()
+        dq.push(arr[j])
 
-        if(j-i+1 < k)j++
-        else if(j-i+1 ==k){
-            ans.push(dq.front())
+        if (j - i + 1 < k) j++
+        else if (j - i + 1 == k) {
+            ans.push(dq.first())
             // i - ki calculation
-            if(arr[i]==dq.front()) dq.popFront()
+            if (arr[i] == dq.first()) dq.shift()
             i++
-            j++   
+            j++
         }
     }
-return ans
+    return ans
 }
 let res = maxNum([1, 3, -1, -3, 5, 3, 6, 7], 8, 3)
 console.log(res)

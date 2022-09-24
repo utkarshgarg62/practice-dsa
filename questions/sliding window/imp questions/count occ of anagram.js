@@ -21,6 +21,7 @@ var countAnagram = (str, ptr) => {
     let count = map.size
 
     while (j < n) {
+        
         // j - ki calculation
         if (map.has(str[j])) map.set(str[j], (map.get(str[j]) - 1))
         if (map.get(str[j]) == 0) count--
@@ -28,6 +29,7 @@ var countAnagram = (str, ptr) => {
         if (j - i + 1 < k) j++
         else if (j - i + 1 == k) {
             if (count == 0) ans++
+
             // i - ki calculation
             if (map.has(str[i])) map.set(str[i], (map.get(str[i]) + 1))
             if (map.get(str[i]) > 0) count++
