@@ -14,14 +14,14 @@ var maxNum = (arr, n, k) => {
     let ans = []
     while (j < n) {
         // j - ki calculation
-        while (dq.last() < arr[j] && dq.length > 0) dq.pop()
+        while (dq.last() < arr[j] && dq.length > 0) dq.pop() //delete the last element if smaller then arr[j]
         dq.push(arr[j])
 
         if (j - i + 1 < k) j++
         else if (j - i + 1 == k) {
             ans.push(dq.first())
             // i - ki calculation
-            if (arr[i] == dq.first()) dq.shift()
+            if (arr[i] == dq.first()) dq.shift() //delete the first element if similar to arr[i]
             i++
             j++
         }
