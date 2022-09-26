@@ -15,19 +15,19 @@
 
 // sliding window approach:
 function sliding(nums, k) {
-    let i=0
-    let j=0
-    let large_num=[]
-    let result =[]
-    while(j<nums.length){
-        while(large_num.length > 0 && large_num[large_num.length-1] <nums[j]) large_num.pop()
+    let i = 0
+    let j = 0
+    let large_num = []
+    let result = []
+    while (j < nums.length) {
+        while (large_num.length > 0 && large_num[large_num.length - 1] < nums[j]) large_num.pop()
         large_num.push(nums[j])
-        if(j-i+1 == k){
+        if (j - i + 1 == k) {
             result.push(large_num[0])
-            if(large_num[0] == nums[i]) large_num.shift()
+            if (large_num[0] == nums[i]) large_num.shift()
             i++; j++;
         }
-        if(j-i+1 < k) j++ 
+        if (j - i + 1 < k) j++
     }
     return result
 }
