@@ -18,3 +18,5 @@ function insertion_sort(arr) {
 
 let res = insertion_sort([233, 12, 6, 89, 34, 56])
 console.log(res)
+
+// The worst-case (and average-case) complexity of the insertion sort algorithm is O(n²).
