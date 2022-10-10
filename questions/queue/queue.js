@@ -90,3 +90,6 @@ console.log(queue.dequeue());
 console.log(queue.printQueue());
 
 console.log(queue)
+
+
+module.exports = Queue
