@@ -5,8 +5,7 @@ LINKED LIST ---------------------
 *-Detect Cycle in a Linked List
 *-Find a loop in linked list
 *-Remove Nth Node From End Of List
+*-Reorder List
+*-Reverse LL in group of K
 
-
--Reorder List
 -Find intersection point of two LL
--Reverse LL in group of K
