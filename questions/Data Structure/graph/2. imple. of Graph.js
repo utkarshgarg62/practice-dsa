@@ -1,4 +1,5 @@
 // Implementation of Graph
+// Adjacency List
 
 class Graph {
     constructor(no_of_vertices) {
