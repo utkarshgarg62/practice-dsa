@@ -7,37 +7,44 @@ output = 4
 
 var countAnagram = (str, ptr) => {
 
-    let k = ptr.length
-    let n = str.length
     let i = 0
     let j = 0
-    let ans = 0
+    let k = ptr.length
+    let n = str.length
+    let res = 0
 
+    //   Hash Map of ptr
     let map = new Map()
     for (let ele of ptr) {
         map.set(ele, (map.get(ele) + 1) || 1)
     }
-    // console.log(map)
     let count = map.size
 
     while (j < n) {
-        
-        // j - ki calculation
-        if (map.has(str[j])) map.set(str[j], (map.get(str[j]) - 1))
-        if (map.get(str[j]) == 0) count--
+        //   Decreasing the count in map and calculating map size
+        if (map.has(str[j])) {
+            map.set(str[j], (map.get(str[j]) - 1))
+            if (map.get(str[j]) == 0) count--
+        }
 
         if (j - i + 1 < k) j++
         else if (j - i + 1 == k) {
-            if (count == 0) ans++
 
-            // i - ki calculation
-            if (map.has(str[i])) map.set(str[i], (map.get(str[i]) + 1))
-            if (map.get(str[i]) > 0) count++
+            //   counting the map size and increasing the main count
+            if (count == 0) res++
+
+            //   Increasing the count in map and calculating map size
+            if (map.has(str[i])) {
+                map.set(str[i], map.get(str[i]) + 1 )
+                if (map.get(str[i]) == 1) count++
+            }
+
+            //   sliding window by i++, j++
             i++
             j++
         }
     }
-    return ans
+    return res
 }
 
 let res1 = countAnagram("forxxorfxaofr", "for")

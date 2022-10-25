@@ -34,7 +34,7 @@ function ThreeSum2(nums) {
     nums.sort((a, b) => a - b)
     let len = nums.length
     let result = []
-    for (let i = 0; i < len - 3; i++) {
+    for (let i = 0; i <= len - 2; i++) {
         let j = i + 1
         let k = len - 1
         while (j < k) {

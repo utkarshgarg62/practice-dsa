@@ -15,5 +15,5 @@ return result
 
 }
 
-let res = abc([1, 2, 3, 4])
+let res = abc([1, 2, 3])
 console.log(res)
