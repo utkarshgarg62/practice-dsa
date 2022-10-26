@@ -7,10 +7,11 @@ TREE -----------------------------
 *-Binary Tree Level Order Traversal
 
 
--Binary Tree Maximum Path Sum
--Serialize and Deserialize Binary Tree
 -Subtree of Another Tree
 -Kth Smallest Element in a BST
+
+-Binary Tree Maximum Path Sum
+-Serialize and Deserialize Binary Tree
 -Lowest Common Ancestor of BST
 -Implement Trie (Prefix Tree)
 -Add and Search Word
